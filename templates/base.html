@@ -16,9 +16,9 @@
                     <h2>Petrobowl-UENR</h2><br>
                 </div>
             </a>
-            <a href="" class="mid-head" id="training"><h2>Training</h2></a>
+            <a href="{% url 'training' %}" class="mid-head" id="training"><h2>Training</h2></a>
             <a href="{% url 'quiz' %}" class="mid-head" id="quiz"><h2>Quiz</h2></a>
-            <a href="" class="mid-head" id="resources"><h2>Resources</h2></a>
+            <a href="{% url 'resources' %}" class="mid-head" id="resources"><h2>Resources</h2></a>
             <a href="" id="menu"><h2>Menu</h2></a>
         </header>
         {% block body %}

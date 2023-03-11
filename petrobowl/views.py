@@ -19,6 +19,12 @@ def convertToVoiceText(text):
 def HomePageView(request):
     return render(request, "home.html",)
 
+def ResourcesPageView(request):
+    return render(request, "resources.html")
+
+def TrainingPageView(request):
+    return render(request, "training.html")
+
 def QuizPageView(request):
     return render(request, "quiz.html")
 
