@@ -13,6 +13,7 @@ function animate_slogan() {
     }
 }
 
+
 function initialize_voice() {
     // Gets the speechSynthesis object
     var engine = window.speechSynthesis;
@@ -44,6 +45,12 @@ async function start_quiz() {
         const voiceOutput = initialize_voice();
         const utterance = voiceOutput[1];
         const engine = voiceOutput[0];
+
+        // Listens for navigation away from web page and stops speech engine 
+        // if promise is fulfiled
+        window.addEventListener("beforeunload", function(event) {
+            engine.cancel();
+        })
 
         // Displays and reads-out question and answer in a recursive loop
         setTimeout(() => {
@@ -88,7 +95,7 @@ async function fetchData() {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(start_quiz, 3000);
+    start_quiz();
     setInterval(animate_slogan, 5000);
 });
 
