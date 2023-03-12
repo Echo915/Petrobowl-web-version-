@@ -16,7 +16,7 @@
                     <img src="{% static 'images/uenr-logo.png' %}" alt="petrobowl" id="icon-photo-uenr">
                 </div>
             </a><br>
-            <a href="{% url 'home' %}" class="mid-head"><h2>Home</h2></a>
+            <!-- a href="{% url 'home' %}" class="mid-head"><h2>Home</h2></a -->
             <a href="{% url 'training' %}" class="mid-head" id="training"><h2>Training</h2></a>
             <a href="{% url 'quiz' %}" class="mid-head" id="quiz"><h2>Quiz</h2></a>
             <a href="{% url 'resources' %}" class="mid-head" id="resources"><h2>Resources</h2></a>
@@ -25,6 +25,6 @@
         <main>
             {% block body %}
             {% endblock %}
-        </main>
+        </main><br>
     </body>
 </html>

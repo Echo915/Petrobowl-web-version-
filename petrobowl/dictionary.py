@@ -10,6 +10,7 @@ DICTIONARY = {
     "______": "dash",
     "___": "dash",
     "2:1": "2 to 1",
+    "1/bbl": "per barrel",
     "1/day":"per day",
     "2x": "",
     "bbl/day":"barrels per day", 

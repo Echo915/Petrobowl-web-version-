@@ -4,6 +4,15 @@
 {% block body %}
     <img src="{% static 'images/pbowl.png' %}" alt="image" id="pbowl-logo">
     <p id="slogan">Think Petroleum... Think Energy!!!</p>
+    <h2>Petrobowl-UENR</h2>
+    <p>Some Students of the Department of Petroleum and Natural Gas Engineering of the University 
+        of Energy and Natural Resources (UENR) have made a historic feat by emerging winners in the 
+        PetroBowl contest held during the SPE Ghana Chapter Student Conference on 
+        June 10, 2022, in Accra... 
+    </p>
+    <a href="https://uenr.edu.gh/uenr-students-make-historic-feat-at-spe-ghana-conference/" target="_blank">
+        Learn More
+    </a>
     <h2>About PetroBowl® Competition</h2>
     <p>The PetroBowl® competition pitches SPE student chapter teams against each other in a series of 
         quick-fire rounds, answering technical and nontechnical industry-related questions. The contest 
@@ -16,4 +25,12 @@
         PetroBowl® Championship.
     </p>
     <a href="https://www.spe.org/en/students/petrobowl/petrobowl-history/" target="_blank">Learn More</a>
+    <br><br>
+    <footer>
+        <div id="footer-links">
+            <a href="{% url 'training' %}" class="footer-link"><p>Training</p></a>
+            <a href="{% url 'quiz' %}" class="footer-link"><p>Quiz</p></a>
+            <a href="{% url 'resources' %}" class="footer-link"><p>Resources</p></a>
+        </div>
+    </footer>
 {% endblock %}

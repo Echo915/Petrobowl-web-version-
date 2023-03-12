@@ -18,16 +18,29 @@
     margin: auto;
 }
 
-#pbowl-logo{
+#pbowl-logo {
     width: 30%;
     height: 30%;
     display: block;
     margin: auto;
 }
 
+#footer-links {
+    border-top: 2px solid #a82428;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+    float: left;
+    text-align: right;
+    padding: 0 0.5%;
+}
+
 .mid-head {
     color: #a82428;
-    float: left;
+    float: right;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -66,7 +79,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+}
+
+footer {
+    display: block;
+    height: 100px;
+    text-align: center;
+    background-color: darksalmon;
 }
 
 p {
