@@ -1,5 +1,4 @@
 .venv
 operation.py
 __pycache__/
-database.db
-db.sqlite3
+junk.txt

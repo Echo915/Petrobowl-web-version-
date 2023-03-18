@@ -4,24 +4,31 @@
 <html lang="eng">
     <head>
         <title>petrobowl-UENR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="{% static 'images/uenr-logo.png' %}">
         <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="{% static 'javascript/base.js' %}"></script>
     </head>
     <body>
-        <header>
-            <a id="home" href="{% url 'home' %}">
-                <div id="home-div">
-                    <img src="{% static 'images/pbowl.png' %}" alt="petrobowl" id="icon-photo-pbowl">
-                    <img src="{% static 'images/uenr-logo.png' %}" alt="petrobowl" id="icon-photo-uenr">
+        <div class="top-nav">
+            <a href="{% url 'home' %}" id="home"><i class="fa fa-home"></i> Home</a>
+            <a href="{% url 'training' %}" id="training">Training</a>
+            <a href="{% url 'quiz' %}" id="quiz">Quiz</a>
+            <a href="https://drive.google.com/drive/folders/13VGlhDZRmpEHfF0Qywtgxb-VzMYxQavB?usp=sharing" 
+            target="_blank" id="resources">Resources</a>
+            <div id="set-menu">
+                <button id="Set">Set</button>
+                <div id="set-contents">
+                    <a href="">Set 1</a>
+                    <a href="">Set 2</a>
+                    <a href="">Set 3</a>
+                    <a href="">Set 4</a>
+                    <a href="">Set 5</a>
                 </div>
-            </a><br>
-            <!-- a href="{% url 'home' %}" class="mid-head"><h2>Home</h2></a -->
-            <a href="{% url 'training' %}" class="mid-head" id="training"><h2>Training</h2></a>
-            <a href="{% url 'quiz' %}" class="mid-head" id="quiz"><h2>Quiz</h2></a>
-            <a href="{% url 'resources' %}" class="mid-head" id="resources"><h2>Resources</h2></a>
-            <a href="" id="menu" class="mid-head"><h2>Menu</h2></a>
-        </header>
+            </div>
+        </div>
         <main>
             {% block body %}
             {% endblock %}

@@ -10,6 +10,46 @@
     float: left;
 }
 
+#home {
+    color: #a82428;
+}
+
+#set-menu {
+    overflow: hidden;
+}
+
+#set-menu button {
+    color: #a82428;
+    background-color: inherit;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    margin: 0;
+    font-size: 20px;
+    padding: 14px 16px;
+}
+
+#set-menu:hover #set-contents {
+    display: block;
+}
+
+#set-contents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#set-contents a {
+    float: none;
+    display: block;
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
 #ai-head {
     width: 20%;
     height: 20%;
@@ -38,19 +78,26 @@
     padding: 0 0.5%;
 }
 
-.mid-head {
+.top-nav {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.top-nav a {
     color: #a82428;
-    float: right;
+    float: left;
+    font-size: 20px;
+    text-align: center;
     text-decoration: none;
-    white-space: nowrap;
+    padding: 14px 16px;
 }
 
-#menu {
-    padding-right: 2%;
+.top-nav a:hover {
+    background-color: #f1f1f1;
 }
 
-main {
-    padding-top: 4%;  
+.top-nav a:active {
+    border-bottom: 2px solid #a82428;
 }
 
 #slogan {
@@ -73,12 +120,7 @@ header {
     left: 0;
     width: 100%;
     background-color: #fff;
-
     border-bottom: 1px solid #999;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 footer {
@@ -88,7 +130,7 @@ footer {
     background-color: darksalmon;
 }
 
-p {
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
